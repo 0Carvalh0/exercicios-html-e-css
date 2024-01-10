@@ -6,8 +6,9 @@
     <title>Projeto Menu</title>
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/media-query.css">
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Meu Site</h1>
         <i id="burger" class="material-symbols-outlined" onclick="clickmenu()">menu</i>
@@ -38,6 +39,14 @@
                 menu.style.display = 'none'
             } else {
                 menu.style.display = 'block'
+            }
+        }
+
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
             }
         }
     </script>
