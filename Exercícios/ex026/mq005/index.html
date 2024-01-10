@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Menu</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burger" class="material-symbols-outlined" onclick="clickmenu()">menu</i>
+        <menu id="menu">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -29,5 +31,15 @@
             <p>Quaerat ad iste rerum cumque. Voluptatum omnis repudiandae enim sunt! Totam, velit pariatur quia dolorum libero doloribus repellat sit explicabo delectus culpa ipsum necessitatibus. Ullam pariatur distinctio praesentium nesciunt neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus illo nulla assumenda praesentium rerum doloremque tempore voluptatibus necessitatibus nobis odit possimus blanditiis numquam officiis natus, veritatis minus perspiciatis nisi fugiat?</p>
         </article>
     </main>
+
+    <script>
+        function clickmenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
