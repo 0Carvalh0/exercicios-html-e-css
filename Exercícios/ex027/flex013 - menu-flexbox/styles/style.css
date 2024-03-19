@@ -17,17 +17,44 @@ html {
 }
 
 header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+
   background-color: gray;
   color: #fff;
   padding: 10px;
 }
 
 header h1 {
-    border: 1px dotted #000;
+  border: 1px dotted #000;
+  flex: 0 0 200px;
 }
 
 header nav {
-    border: 1px dotted #000;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+
+  border: 1px dotted #000;
+}
+
+header nav a {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+header nav a:hover {
+  background-color: #fff;
+  color: #000;
+
+  transition: all ease 0.5s;
 }
 
 main {
